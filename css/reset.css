@@ -1,0 +1,74 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Poppins", sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: var(--text-color-black);
+	background-color: var(--body-color);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+img,
+svg {
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	/* Prevents unwanted spacing */
+	vertical-align: middle;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+section {
+	display: block;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 32px;
+	padding-right: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+button,
+input,
+textarea {
+	font: inherit;
+	border: none;
+	background: none;
+	appearance: none;
+}
+
+:focus {
+	outline: none;
+}
+
+button,
+a,
+[tabindex] {
+	cursor: pointer;
+}
