@@ -253,3 +253,14 @@
 		gap: 24px;
 	}
 }
+
+@media (min-width: 330px) and (max-width: 900px) {
+		/* Service page left menu hiding for mobile and tablets*/
+
+		.services-sidebar {
+			display: none;
+		}
+		.page {
+			margin-left: 0px;
+		}	
+}
