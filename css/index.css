@@ -529,3 +529,18 @@ section.our-clients {
 	text-transform: uppercase;
 	color: var(--text-color-grey);
 }
+
+.service-card-link   a{
+	background-color: #ffffff;
+    padding: 3px 3px;
+    color: #dd1285;
+    border-radius: 4px;
+} 
+
+.service-card-link i{
+	color: #19a9a9;
+}
+
+.service-card-link li{
+	text-align: left;
+}
