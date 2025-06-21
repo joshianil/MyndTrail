@@ -5,46 +5,73 @@
   <title>MyDesh Foundation - Registration</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fef9f2;
       color: #333;
     }
 
     .container {
       width: 90%;
       max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
+      margin: auto;
+      padding: 30px 20px;
     }
 
     .logo {
       text-align: center;
-      font-size: 32px;
+      font-size: 36px;
       font-weight: bold;
       color: #2e6da4;
       margin-top: 20px;
     }
 
+    .section {
+      padding: 40px 20px;
+    }
+
+    .section.alt {
+      background-color: #2e6da4;
+      color: #fff;
+    }
+
     .section-title {
       text-align: center;
-      font-size: 24px;
-      margin-top: 20px;
-      color: #444;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
 
     .subtext {
       text-align: center;
       font-size: 16px;
       margin-bottom: 20px;
-      color: #666;
+    }
+
+    .register-button {
+      display: inline-block;
+      background-color: #2e6da4;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      margin: 0 auto;
+    }
+
+    .register-button:hover {
+      background-color: #23527c;
+    }
+
+    .register-button::after {
+      content: " ➔";
+      font-size: 18px;
     }
 
     iframe {
       display: block;
-      margin: 0 auto 30px auto;
+      margin: 30px auto;
       width: 100%;
       height: 600px;
       border: none;
@@ -54,7 +81,8 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-bottom: 40px;
+      margin-top: 40px;
+      gap: 20px;
     }
 
     .info-box {
@@ -63,14 +91,13 @@
     }
 
     .info-box img {
-      max-width: 100%;
+      width: 100%;
       border-radius: 8px;
     }
 
     @media (max-width: 768px) {
       .info-box {
         width: 100%;
-        margin-bottom: 20px;
       }
     }
 
@@ -78,47 +105,61 @@
       text-align: center;
       font-size: 14px;
       color: #aaa;
-      margin-top: 40px;
+      padding: 30px 0;
+    }
+
+    h3 {
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
     <div class="logo">MyDesh Foundation</div>
-    <div class="section-title">Children Development</div>
-    <div class="subtext">Join us in nurturing the future through knowledge, care, and opportunities for children.</div>
-    <div class="section-title"><a href="https://docs.google.com/forms/d/1Wotz-qrDvdpgqREjo1GWqlXErIvu_1PS1f_M-VWgXxU/preview" target="_blank"  color:#2e6da4;>Please Register for the Event</a> <br>
-    
+
+    <!-- Children Development Section -->
+    <div class="section">
+      <div class="section-title">Children Development</div>
+      <div class="subtext">
+        Join us in nurturing the future through knowledge, care, and opportunities for children.
+      </div>
     </div>
 
-    <!-- Google Form Embed (Replace with your actual form URL) -->
+    <!-- Registration Button -->
+    <div class="section alt" style="text-align: center;">
+      <div class="section-title">Please Register for the Event</div>
+      <a href="https://docs.google.com/forms/d/1Wotz-qrDvdpgqREjo1GWqlXErIvu_1PS1f_M-VWgXxU/preview" target="_blank" class="register-button">Register Now</a>
+    </div>
 
-    
-    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOIHfcN8tK9t_KDUf6R5qZeaBaeLlmWzUF1p_spTzstyX_2w/viewform?usp=preview" width="640" height="687" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-    <!-- Address and Map Section -->
-    <div class="info-section">
-      <div class="info-box">
-        <h3>Event Address</h3>
-        <p>Rangaayana || Art Performing Theater ||<br>
-        College Road<br>
-        Near Court Circle<br>
-        Dharwad</p>
-      </div>
-      <div class="info-box">
-        <!-- Google Map Embed -->
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d679.7998518573714!2d75.00514364423871!3d15.455969259798312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd7cf97550c1%3A0x22260ee31941def6!2sRangaayana%20%7C%7C%20Art%20Performing%20Theater%20%7C%7C%20Dharwad!5e0!3m2!1sen!2sin!4v1750495262748!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Address and Map -->
+    <div class="section">
+      <div class="info-section">
+        <div class="info-box">
+          <h3>Event Address</h3>
+          <p>
+            Rangaayana || Art Performing Theater ||<br />
+            College Road<br />
+            Near Court Circle<br />
+            Dharwad
+          </p>
+        </div>
+        <div class="info-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d679.7998518573714!2d75.00514364423871!3d15.455969259798312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd7cf97550c1%3A0x22260ee31941def6!2sRangaayana%20%7C%7C%20Art%20Performing%20Theater%20%7C%7C%20Dharwad!5e0!3m2!1sen!2sin!4v1750495262748!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
 
     <!-- Speaker Section -->
-    <div class="info-section">
-      <div class="info-box">
-        <h3>Speaker: Gayatri</h3>
-        <p>Gayatri is a passionate educator and child development expert with over 10 years of experience in early education programs and community engagement. Her insights into holistic development inspire and uplift families and children alike.</p>
-      </div>
-      <div class="info-box">
-        <img src="https://via.placeholder.com/300x300.png?text=Speaker+Image" alt="Speaker Gayatri">
+    <div class="section alt">
+      <div class="info-section">
+        <div class="info-box">
+          <h3>Speaker: Gayatri</h3>
+          <p>Gayatri is a passionate educator and child development expert with over 10 years of experience in early education programs and community engagement. Her insights into holistic development inspire and uplift families and children alike.</p>
+        </div>
+        <div class="info-box">
+          <img src="https://via.placeholder.com/300x300.png?text=Speaker+Image" alt="Speaker Gayatri" />
+        </div>
       </div>
     </div>
 
