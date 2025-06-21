@@ -2,168 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MyDesh Foundation - Registration</title>
+  <title>My Desh Foundation</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fef9f2;
+      background-color: #ffffff;
       color: #333;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-
-    .logo {
-      text-align: center;
-      font-size: 36px;
+    .navbar {
+      background-color: #f5f5f5;
+      padding: 15px 30px;
+      font-size: 24px;
       font-weight: bold;
-      color: #2e6da4;
-      margin-top: 20px;
     }
 
     .section {
       padding: 40px 20px;
     }
 
-    .section.alt {
-      background-color: #2e6da4;
-      color: #fff;
+    .alt-background {
+      background-color: #fef9f2;
     }
 
     .section-title {
       text-align: center;
       font-size: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
     }
 
-    .subtext {
-      text-align: center;
-      font-size: 16px;
-      margin-bottom: 20px;
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-box, .image-box {
+      flex: 1 1 45%;
+    }
+
+    .image-box img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
 
     .register-button {
       display: inline-block;
       background-color: #2e6da4;
       color: white;
-      padding: 12px 20px;
+      padding: 12px 24px;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
       font-size: 16px;
-      transition: background-color 0.3s ease;
-      margin: 0 auto;
+      text-align: center;
+      transition: background-color 0.3s;
     }
 
     .register-button:hover {
       background-color: #23527c;
     }
 
-    .register-button::after {
-      content: " ➔";
-      font-size: 18px;
+    .button-container {
+      text-align: center;
+      margin: 30px 0;
     }
 
     iframe {
-      display: block;
-      margin: 30px auto;
       width: 100%;
-      height: 600px;
-      border: none;
-    }
-
-    .info-section {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 40px;
-      gap: 20px;
-    }
-
-    .info-box {
-      width: 48%;
-      box-sizing: border-box;
-    }
-
-    .info-box img {
-      width: 100%;
-      border-radius: 8px;
+      height: 300px;
+      border: 0;
+      border-radius: 6px;
     }
 
     @media (max-width: 768px) {
-      .info-box {
-        width: 100%;
+      .flex-container {
+        flex-direction: column;
       }
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 14px;
-      color: #aaa;
-      padding: 30px 0;
-    }
-
-    h3 {
-      margin-top: 0;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="logo">MyDesh Foundation</div>
-
-    <!-- Children Development Section -->
-    <div class="section">
-      <div class="section-title">Children Development</div>
-      <div class="subtext">
-        Join us in nurturing the future through knowledge, care, and opportunities for children.
-      </div>
-    </div>
-
-    <!-- Registration Button -->
-    <div class="section alt" style="text-align: center;">
-      <div class="section-title">Please Register for the Event</div>
-      <a href="https://docs.google.com/forms/d/1Wotz-qrDvdpgqREjo1GWqlXErIvu_1PS1f_M-VWgXxU/preview" target="_blank" class="register-button">Register Now</a>
-    </div>
-
-    <!-- Address and Map -->
-    <div class="section">
-      <div class="info-section">
-        <div class="info-box">
-          <h3>Event Address</h3>
-          <p>
-            Rangaayana || Art Performing Theater ||<br />
-            College Road<br />
-            Near Court Circle<br />
-            Dharwad
-          </p>
-        </div>
-        <div class="info-box">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d679.7998518573714!2d75.00514364423871!3d15.455969259798312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd7cf97550c1%3A0x22260ee31941def6!2sRangaayana%20%7C%7C%20Art%20Performing%20Theater%20%7C%7C%20Dharwad!5e0!3m2!1sen!2sin!4v1750495262748!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- Speaker Section -->
-    <div class="section alt">
-      <div class="info-section">
-        <div class="info-box">
-          <h3>Speaker: Gayatri</h3>
-          <p>Gayatri is a passionate educator and child development expert with over 10 years of experience in early education programs and community engagement. Her insights into holistic development inspire and uplift families and children alike.</p>
-        </div>
-        <div class="info-box">
-          <img src="https://via.placeholder.com/300x300.png?text=Speaker+Image" alt="Speaker Gayatri" />
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">© 2025 MyDesh Foundation. All rights reserved.</div>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    My Desh Foundation
   </div>
+
+  <!-- Upcoming Event Section -->
+  <div class="section">
+    <div class="section-title">Upcoming Event</div>
+    <div class="flex-container">
+      <div class="text-box">
+        <h2>Good Parenting using Theatre</h2>
+        <p>Discover how theatre can be a powerful tool for building communication, empathy, and emotional intelligence in parenting. This interactive event focuses on practical insights and creative strategies to strengthen parent-child relationships.</p>
+      </div>
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x200" alt="Event Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Button -->
+  <div class="section alt-background">
+    <div class="button-container">
+      <a href="https://docs.google.com/forms/d/1Wotz-qrDvdpgqREjo1GWqlXErIvu_1PS1f_M-VWgXxU/preview" target="_blank" class="register-button">Register for the Event</a>
+    </div>
+  </div>
+
+  <!-- Know the Speaker Section -->
+  <div class="section">
+    <div class="section-title">Know the Speaker</div>
+    <div class="flex-container">
+      <div class="text-box">
+        <h3>Gayatri</h3>
+        <p>Gayatri is an experienced educator and child development specialist who blends creativity with care. With a passion for empowering parents, her sessions are engaging, practical, and inspiring.</p>
+      </div>
+      <div class="image-box">
+        <img src="https://via.placeholder.com/250x250" alt="Speaker Gayatri">
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Section -->
+  <div class="section alt-background">
+    <div class="section-title">Location</div>
+    <div class="flex-container">
+      <div class="text-box">
+        <p><strong>Rangaayana – Art Performing Theater</strong><br>
+        College Road<br>
+        Near Court Circle<br>
+        Dharwad</p>
+      </div>
+      <div class="image-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d679.7998518573714!2d75.00514364423871!3d15.455969259798312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd7cf97550c1%3A0x22260ee31941def6!2sRangaayana%20%7C%7C%20Art%20Performing%20Theater%20%7C%7C%20Dharwad!5e0!3m2!1sen!2sin!4v1750495262748!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
